@@ -22,7 +22,7 @@ public enum RumNumeric {
         return arabian;
     }
 
-    // Создаем static final карту
+    // Создаем карту
     private static final Map<Integer, RumNumeric> LOOKUP_MAP = new HashMap<>();
 
     // Заполняем её всеми значениями
@@ -32,7 +32,7 @@ public enum RumNumeric {
         }
     }
 
-    // Возвращаем Environment по строковому url
+    // Возвращаем RumNumeric по arabian
     public static RumNumeric getRumByArabian(int arabian) {
         return LOOKUP_MAP.get(arabian);
     }
